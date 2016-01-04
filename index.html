@@ -8,7 +8,7 @@
 </head>
 <body>
   <header id="page-header">
-    <span class="logo">PBJradio</span>
+    <span class="logo">WDI Radio</span>
     <ul class="nav">
       <li><a href="#">Library</a></li>
       <li><a href="#songs/new">Add Song</a></li>
@@ -44,36 +44,5 @@
       <button class="submit">Add Song</button>
     </div>
   </div>
-
-<script id="songTemplate" type="text/x-handlebars-template">
-  <div class="song-image">
-    <img src="{{album_art}}" />
-  </div>
-  <div class="song-info">
-    <p>
-      {{title}}
-    </p>
-    <p>
-      {{artist}}
-    </p>
-  </div>
-</script>
-
-<script id="playerTemplate" type="text/x-handlebars-template">
-  <div class="song-image">
-    <img src="{{album_art}}" />
-  </div>
-  <div class="song-info">
-    <p>
-      {{title}}
-    </p>
-    <p>
-      {{artist}}
-    </p>
-  </div>
-  <audio autoplay controls src="{{audio_url}}"></audio>
-
-</script>
-
 </body>
 </html>
