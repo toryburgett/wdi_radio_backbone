@@ -1,4 +1,4 @@
-# PBJ Radio
+# WDI Radio: Backbone Edition
 
 For this app, your job is to build a single-page app that plays music. It's a real,
 functional tunr!
