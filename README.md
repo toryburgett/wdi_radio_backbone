@@ -11,6 +11,7 @@ Fork and clone [this repo](https://github.com/ga-dc/wdi_radio_api). We'll be usi
 
 ```bash
 $ cd wdi_radio_api
+$ bundle install
 $ rake db:create
 $ rake db:migrate
 $ rake db:seed
@@ -20,6 +21,17 @@ $ rails s
 This will be the backend we'll be using, from http://localhost:3000.
 
 ## Tuesday: Add Models, Collections and Item Views
+
+### Models and Collections
+
+* Create a main `index.html` for your Backbone application
+* Create a directory for `js`, and in it, make directories for `models`, and `collections`
+* Add an `app.js` to your `js` directory
+* Install Backbone dependencies using Bower.
+* Create a file necessary for creating a Model definition for `Song`
+* Create a file necessary for creating a Collection definition for `Songs`
+* Write the appropriate Model definition for `Song`
+* Write the appropriate Collection definition for `Songs`
 
 ### Item View
 
