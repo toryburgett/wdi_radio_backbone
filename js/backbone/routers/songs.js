@@ -15,7 +15,6 @@ App.Routers.Song = Backbone.Router.extend({
 
   index: function(){
     App.Collections.songs.fetch({reset:true});
-    //if form toggle breaks, its because of this janky code
     if( $("#new-song-modal").css("display") == "block"){
       $("#new-song-modal").hide();
     }

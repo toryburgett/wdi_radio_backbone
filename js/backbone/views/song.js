@@ -9,6 +9,7 @@ App.Views.Song = Backbone.View.extend({
 
     this.render();
   },
+  
   events: {
     'click .song-image': "updatePlayer",
     'click .song-info': "renderEditForm",
