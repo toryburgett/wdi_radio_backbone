@@ -1,30 +1,58 @@
 <html>
 <head>
+
+  <title>RadioLand!</title>
+
+  <!-- Bower Components -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/handlebars/handlebars.min.js"></script>
+  <script src="bower_components/backbone/backbone-min.js"></script>
+
+  <!-- app.js & Backbone files -->
+  <script src="js/app.js"></script>
+  <script src="js/backbone/models/song.js"></script>
+  <script src="js/backbone/collections/songs.js"></script>
+  <script src="js/backbone/views/song.js"></script>
+
+  <!-- StyleSheets -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/song.css">
   <link rel="stylesheet" type="text/css" href="css/navigation.css">
   <link rel="stylesheet" type="text/css" href="css/form.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
+
   <header id="page-header">
+
     <span class="logo">WDI Radio</span>
+
     <ul class="nav">
       <li><a href="#">Library</a></li>
       <li><a href="#songs/new">Add Song</a></li>
     </ul>
+
   </header>
+
+
   <div id="player-section">
     <h2>Now playing</h2>
     <div id="player"></div>
   </div>
+
   <div id="main-content">
     <h2>Library</h2>
     <div id="library"></div>
   </div>
+
   <div id="new-song-modal">
+
     <span class="close">[x]</span>
     <h2>Add Song</h2>
+
     <div class="new-song">
       <label for="new-song-artist">Artist</label>
       <input id="new-song-artist"></input>
@@ -43,6 +71,67 @@
 
       <button class="submit">Add Song</button>
     </div>
+
   </div>
+
+  <script id="songTemplate" type="text/x-handlebars-template">
+    <span class="close">[x]</span>
+    <h2>Add Song</h2>
+    <div id="new-song-modal">
+
+      <span class="close">[x]</span>
+      <h2>Add Song</h2>
+      <div class="new-song">
+        <label for="new-song-artist">Artist</label>
+        <input id="new-song-artist"></input>
+
+        <label for="new-song-title">Title</label>
+        <input id="new-song-title"></input>
+
+        <label for="new-song-genre">Genre</label>
+        <input id="new-song-genre"></input>
+
+        <label for="new-song-audio-url">Audio URL</label>
+        <input id="new-song-audio-url"></input>
+
+        <label for="new-song-album-art">Album Art URL</label>
+        <input id="new-song-album-art"></input>
+
+        <button class="submit">Add Song</button>
+      </div>
+    </div>
+
+    <!-- May be useful for Edit/Update? -->
+    <!-- <script id="songTemplate" type="text/x-handlebars-template">
+      <span class="close">[x]</span>
+      <h2>Add Song</h2>
+      <div id="new-song-modal">
+
+        <span class="close">[x]</span>
+        <h2>Add Song</h2>
+        <div class="new-song">
+          <label for="new-song-artist">Artist</label>
+          <input id="new-song-artist"></input>
+
+          <label for="new-song-title">Title</label>
+          <input id="new-song-title"></input>
+
+          <label for="new-song-genre">Genre</label>
+          <input id="new-song-genre"></input>
+
+          <label for="new-song-audio-url">Audio URL</label>
+          <input id="new-song-audio-url"></input>
+
+          <label for="new-song-album-art">Album Art URL</label>
+          <input id="new-song-album-art"></input>
+
+          <button class="submit">Add Song</button>
+        </div>
+      </div> -->
+
+  </script>
+
+
 </body>
+
 </html>

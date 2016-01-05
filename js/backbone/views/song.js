@@ -5,7 +5,7 @@ App.Views.Song = Backbone.View.extend({
 
   },
   initialize: function(){
-    
+
   },
   render: function(){
 
