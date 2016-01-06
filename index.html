@@ -46,6 +46,8 @@
   <div id="main-content">
     <h2>Library</h2>
     <div id="library"></div>
+    <div id="songs"></div>
+
   </div>
 
   <div id="new-song-modal">
@@ -73,8 +75,29 @@
     </div>
 
   </div>
-
   <script id="songTemplate" type="text/x-handlebars-template">
+    <div id="song-modal">
+      <!-- <span class="close">[x]</span> -->
+      <div class="song-show">
+
+        <img src="{{album_art}}" alt="Album art for artist: {{artist}}, song: {{title}}" class="song-image">
+
+        <div class="song-describe">
+          <span class="song-artist">{{artist}}</span><br>
+          <span class="song-name">{{title}}</span><br>
+          <span class="song-genre">{{genre}}</span>
+        </div>
+
+        <audio controls src="{{audio_url}}"></audio>
+
+        <div class="song-show-options">
+          <button class="edit">EDIT</button><span class="fav"> &hearts; </span><button class="delete">DELETE</button>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="songEditTemplate" type="text/x-handlebars-template">
     <span class="close">[x]</span>
     <h2>Add Song</h2>
     <div id="new-song-modal">
@@ -100,37 +123,7 @@
         <button class="submit">Add Song</button>
       </div>
     </div>
-
-    <!-- May be useful for Edit/Update? -->
-    <!-- <script id="songTemplate" type="text/x-handlebars-template">
-      <span class="close">[x]</span>
-      <h2>Add Song</h2>
-      <div id="new-song-modal">
-
-        <span class="close">[x]</span>
-        <h2>Add Song</h2>
-        <div class="new-song">
-          <label for="new-song-artist">Artist</label>
-          <input id="new-song-artist"></input>
-
-          <label for="new-song-title">Title</label>
-          <input id="new-song-title"></input>
-
-          <label for="new-song-genre">Genre</label>
-          <input id="new-song-genre"></input>
-
-          <label for="new-song-audio-url">Audio URL</label>
-          <input id="new-song-audio-url"></input>
-
-          <label for="new-song-album-art">Album Art URL</label>
-          <input id="new-song-album-art"></input>
-
-          <button class="submit">Add Song</button>
-        </div>
-      </div> -->
-
   </script>
-
 
 </body>
 
