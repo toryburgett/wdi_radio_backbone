@@ -9,9 +9,11 @@ App.Views.Song = Backbone.View.extend({
     "click .fav":    "favFunct"
   },
   initialize: function(){
-    this.template = Handlebars.compile( $("#songTemplate").html() );
-    this.editTemplate = Handlebars.compile( $("#songEditTemplate").html() );
     this.listenTo(this.model, "change", this.render);
+
+    this.template = Handlebars.compile( $("#songTemplate").html() );
+    this.editTemplate = Handlebars.compile( $("#formTemplate").html() );
+
     this.render();
   },
   render: function(){
@@ -22,6 +24,7 @@ App.Views.Song = Backbone.View.extend({
 
   },
   updateSong: function(){
+    console.log("yo");
     event.preventDefault();
     var data = {
       title: this.$("[name='title']").val(),
@@ -30,6 +33,9 @@ App.Views.Song = Backbone.View.extend({
       audio_url: this.$("[name='audio_url']").val(),
       album_art: this.$("[name='album_art']").val()
     };
+    console.log(data);
+    console.log("next is model");
+    console.log(this.model);
     this.model.save(data);
   },
   deleteSong: function(){
