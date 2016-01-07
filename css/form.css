@@ -40,7 +40,7 @@ label + input {
 
 /* only the submit button is matched by this selector,
    but to be sure you could use an id or class for that button */
-button {
+/*button {
     float: right;
     margin-right: 34%;
-}
+}*/

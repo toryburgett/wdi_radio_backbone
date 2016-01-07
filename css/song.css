@@ -1,22 +1,101 @@
 .song {
   float:left;
   width: 180px;
-  padding: 24px;
-  height: 200px;
-  text-align: center;
+  padding: 15px;
+  height: 160px;
+  /*text-align: center;*/
+  border: solid white 5px;
+  background-color: lightgray;
 }
 
 .song:hover {
+  background-color: lightpink;
 
 }
 
 .song-image {
-  width: 100px;
-  margin: 0 auto;
+  width: 80px;
+  height: 80px;
   padding: 5px;
   border: 1px solid #ccc;
+  float: right;
+  border: solid black 1px;
 }
 
 .song-image img {
-  width: 100px;
+  width: 80px;
+  float: right;
 }
+
+
+/* description information */
+.song-describe{
+  float: right;
+  width: 80px;
+  /*height: 80px;*/
+  padding: 2px;
+
+}
+.song-artist{
+  font-size: 80%;
+  font-style: oblique;
+}
+
+.song-name{
+  font-size: 80%;
+}
+
+.song-genre{
+  font-size: 70%;
+  font-style: italic;
+}
+
+/* ---------------------- */
+
+
+
+/* Buttons for Song*/
+.song-show-options{
+  float:left;
+  width: 100%;
+  margin: 5px auto;
+  padding: 5px;
+  text-align: center;
+}
+
+button{
+  float: left;
+  background-color: darkgray;
+  color: white;
+  margin: 5px 5px;
+}
+
+button:hover{
+  background-color: palevioletred;
+}
+
+.fav{
+  font-size: 200%;
+  color: salmon;
+  float: left;
+  margin: 0px 20px 5px 20px;
+}
+.fav:hover{
+  color: red;
+}
+/* ------------- */
+
+audio{
+  padding-top: 5px;
+  width: 200px;
+  margin-left: -10px;
+}
+
+
+/*#song-modal{
+
+}
+
+.song-show{
+
+}*/
